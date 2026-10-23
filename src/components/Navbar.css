@@ -1,0 +1,40 @@
+.site-header { width: 100%; height: 76px; background: var(--surface); border-bottom: 1px solid var(--border); transition: background-color .28s ease, border-color .28s ease; }
+.navbar { width: 100%; max-width: 1440px; height: 100%; margin: auto; padding: 0 34px; display: flex; align-items: center; gap: 26px; }
+.brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; flex: 0 0 auto; }
+.brand-mark { display: grid; place-items: center; width: 37px; height: 37px; color: var(--accent-strong); border: 1px solid var(--border-strong); border-radius: 11px; background: var(--surface-soft); }
+.brand-name, .footer-brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 16px; letter-spacing: -.55px; white-space: nowrap; }
+.brand-name span, .footer-brand span { color: var(--highlight); }
+.nav-links { display: flex; align-items: center; justify-content: center; gap: 4px; margin-inline: auto; }
+.nav-link { position: relative; padding: 10px 11px; color: var(--text-muted); text-decoration: none; white-space: nowrap; font-size: 13px; font-weight: 500; border-radius: 7px; transition: color .18s, background-color .18s; }
+.nav-link:hover { color: var(--text); background: var(--surface-soft); }
+.nav-link.active { color: var(--text); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.nav-link.active::after { content: ''; position: absolute; bottom: -18px; left: 12px; right: 12px; height: 2px; border-radius: 2px; background: var(--accent-strong); }
+.nav-actions { display: flex; align-items: center; gap: 9px; margin-left: 0; flex: 0 0 auto; }
+.theme-toggle { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--text-muted); cursor: pointer; transition: color .18s, border-color .18s, background-color .18s; }
+.theme-toggle:hover { color: var(--text); border-color: var(--border-strong); background: var(--surface-soft); }
+.theme-toggle svg { color: var(--highlight); }
+.auth-button { min-height: 38px; display: inline-flex; align-items: center; justify-content: center; padding: 0 14px; border: 1px solid transparent; border-radius: 7px; text-decoration: none; white-space: nowrap; font-size: 12px; font-weight: 700; transition: background-color .18s, border-color .18s, transform .18s; }
+.auth-button:hover { transform: translateY(-1px); }
+.auth-signin { color: var(--text); border-color: var(--border-strong); background: transparent; }
+.auth-signin:hover { background: var(--surface-soft); }
+.auth-signup { color: var(--accent-ink); background: var(--accent); }
+.auth-signup:hover { background: var(--accent-strong); }
+.mobile-menu { display: none; color: var(--text); border: 1px solid var(--border); border-radius: 8px; background: var(--surface-soft); padding: 7px; }
+
+@media (max-width: 1100px) {
+  .navbar { gap: 12px; padding-inline: 24px; }.nav-links { gap: 0; }.nav-link { padding-inline: 7px; font-size: 11px; }.nav-actions { gap: 7px; }.auth-button { padding-inline: 10px; font-size: 11px; }
+}
+@media (max-width: 760px) {
+  .site-header { height: 66px; position: relative; z-index: 5; }.navbar { padding-inline: 18px; gap: 9px; }.brand-name { font-size: 14px; }.brand-mark { width: 34px; height: 34px; }.mobile-menu { display: grid; place-items: center; margin-left: auto; }.nav-actions { margin-left: 0; gap: 6px; }.auth-button { min-height: 36px; padding-inline: 8px; font-size: 11px; }.nav-links { display: none; position: absolute; top: 65px; left: 0; right: 0; padding: 10px 16px 15px; flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--border); background: var(--surface); box-shadow: 0 14px 25px rgba(0,0,0,.18); }.nav-links.is-open { display: flex; }.nav-link { padding: 12px; font-size: 14px; }.nav-link.active::after { top: 9px; bottom: 9px; left: 0; right: auto; width: 2px; height: auto; }
+}
+@media (max-width: 400px) {
+  .site-header { height: 102px; }
+  .navbar { height: 100%; padding: 8px 16px; gap: 7px; flex-wrap: wrap; align-content: center; }
+  .brand { flex: 1 1 auto; }
+  .brand-name { font-size: 13px; }
+  .mobile-menu { margin-left: 0; }
+  .nav-actions { width: 100%; justify-content: flex-end; gap: 6px; }
+  .theme-toggle { width: 32px; height: 32px; }
+  .auth-button { min-height: 32px; padding-inline: 10px; }
+  .nav-links { top: 48px; }
+}

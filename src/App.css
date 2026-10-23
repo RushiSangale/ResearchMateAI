@@ -1,0 +1,2 @@
+#root { width: 100%; min-height: 100vh; }
+.app-shell { width: 100%; min-height: 100vh; overflow-x: clip; color: var(--text); background: var(--bg); transition: background-color .28s ease, color .28s ease; }
