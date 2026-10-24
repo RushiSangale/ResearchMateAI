@@ -6,7 +6,6 @@ import SignUp from './pages/SignUp.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import { AuthProvider } from './context/AuthContext.jsx'
 import { ProtectedRoute, PublicOnlyRoute } from './components/ProtectedRoute.jsx'
-import { useAuth } from './context/AuthContext.jsx'
 import './App.css'
 
 const themes = {
@@ -28,7 +27,6 @@ function getSavedTheme() {
 
 function AppRoutes({ theme, toggleTheme }) {
   const path = window.location.pathname.replace(/\/$/, '') || '/'
-  const { isAuthenticated } = useAuth()
   const nextThemeName = themes[themeOrder[(themeOrder.indexOf(theme) + 1) % themeOrder.length]]
 
   return (

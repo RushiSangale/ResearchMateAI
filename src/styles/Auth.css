@@ -22,8 +22,8 @@
 .terms-label a, .auth-switch a { color: var(--accent-strong); font-weight: 700; text-decoration: none; }
 .terms-label a:hover, .auth-switch a:hover { text-decoration: underline; }
 .form-feedback { margin: -3px 0 0; padding: 10px 11px; border: 1px solid var(--border); border-radius: 7px; font-size: 12px; line-height: 1.5; }
-.form-feedback.error { color: #ffb3c7; border-color: color-mix(in srgb, #ff2d65 40%, transparent); background: color-mix(in srgb, #ff2d65 12%, transparent); }
-.form-feedback.success { color: #91e5bd; border-color: color-mix(in srgb, #38b879 40%, transparent); background: color-mix(in srgb, #38b879 12%, transparent); }
+.form-feedback.error { color: var(--text); border-color: color-mix(in srgb, #ff2d65 40%, transparent); background: color-mix(in srgb, #ff2d65 12%, transparent); }
+.form-feedback.success { color: var(--text); border-color: color-mix(in srgb, #38b879 40%, transparent); background: color-mix(in srgb, #38b879 12%, transparent); }
 .form-feedback.info { color: var(--text-muted); background: var(--surface-soft); }
 .auth-submit { min-height: 46px; margin-top: 1px; border: 0; border-radius: 7px; color: var(--accent-ink); background: var(--accent); cursor: pointer; font-size: 14px; font-weight: 700; transition: background-color .18s, transform .18s; }
 .auth-submit:hover { transform: translateY(-1px); background: var(--accent-strong); }

@@ -25,10 +25,10 @@ export default function SignIn() {
       <span className="auth-kicker">YOUR RESEARCH WORKSPACE</span>
       <h1 className="auth-title">Welcome Back</h1>
       <p className="auth-description">Continue your research journey with ResearchMate AI.</p>
-      <p className="demo-auth-disclosure">Demo sign in accepts any valid email and non-empty password. Credentials are not checked by a server or saved.</p>
+      <p className="demo-auth-disclosure">Demo sign in accepts any valid email and non-empty password. No account is securely registered; credentials are not checked by a server or saved.</p>
       <form className="auth-form" onSubmit={handleSubmit} noValidate>
         <div className="form-field"><label htmlFor="signin-email">Email</label><input id="signin-email" name="email" type="email" autoComplete="email" required value={email} onChange={(event) => setEmail(event.target.value)} /></div>
-        <PasswordField id="signin-password" label="Password" autoComplete="current-password" minLength={8} value={password} onChange={(event) => setPassword(event.target.value)} />
+        <PasswordField id="signin-password" label="Password" autoComplete="current-password" value={password} onChange={(event) => setPassword(event.target.value)} />
         <div className="form-options">
           <label className="checkbox-label"><input type="checkbox" checked={remember} onChange={(event) => setRemember(event.target.checked)} /> <span>Remember me</span></label>
           <button className="text-button" type="button" onClick={() => setFeedback({ type: 'info', text: 'Password recovery will be available when authentication is connected.' })}>Forgot password?</button>
