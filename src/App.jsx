@@ -34,10 +34,12 @@ function AppRoutes({ theme, toggleTheme }) {
       {path === '/dashboard'
         ? <ProtectedRoute><Dashboard theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /></ProtectedRoute>
         : path === '/signin'
-          ? <PublicOnlyRoute><SignIn /></PublicOnlyRoute>
+          ? <PublicOnlyRoute><Navbar theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /><SignIn /></PublicOnlyRoute>
           : path === '/signup'
-            ? <PublicOnlyRoute><SignUp /></PublicOnlyRoute>
-            : <><Navbar theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /><Home themeName={themes[theme]} /></>}
+            ? <PublicOnlyRoute><Navbar theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /><SignUp /></PublicOnlyRoute>
+            : path === '/profile'
+              ? <ProtectedRoute><Navbar theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /><main className="profile-coming-soon"><span className="section-kicker">YOUR ACCOUNT</span><h1>Profile — Coming Soon</h1><p>Your profile tools will be available in a future update.</p><a className="button button-primary" href="/">Back to Home</a></main></ProtectedRoute>
+              : <><Navbar theme={theme} nextThemeName={nextThemeName} onToggleTheme={toggleTheme} /><Home themeName={themes[theme]} /></>}
     </div>
   )
 }
