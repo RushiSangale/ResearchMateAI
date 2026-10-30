@@ -6,10 +6,11 @@ import '../styles/Home.css'
 const features = [
   { number: '01', icon: 'search', iconClass: 'icon-blue', title: 'Research Paper Discovery', description: 'Discover relevant research for your topic and explore paper collections.' },
   { number: '02', icon: 'spark', iconClass: 'icon-rose', title: 'AI Research Assistant', description: 'Ask questions about research papers and understand complex concepts.' },
-  { number: '03', icon: 'compare', iconClass: 'icon-lavender', title: 'Paper Comparison', description: 'Compare research approaches, methods, findings, and limitations.' },
-  { number: '04', icon: 'spark', iconClass: 'icon-blue', title: 'Research Gap Assistant', description: 'Explore potential research gaps and possible future research directions.' },
-  { number: '05', icon: 'planner', iconClass: 'icon-lavender', title: 'Research Planner', description: 'Organize research objectives, milestones, and your research workflow.' },
-  { number: '06', icon: 'book', iconClass: 'icon-rose', title: 'Research Library', description: 'Keep track of saved papers and organize research materials.' },
+  { number: '03', icon: 'analysis', iconClass: 'icon-lavender', title: 'Paper Analysis', description: 'Extract research objectives, understand methodologies, explore key findings, and identify limitations in academic papers.' },
+  { number: '04', icon: 'compare', iconClass: 'icon-lavender', title: 'Paper Comparison', description: 'Compare research approaches, methods, findings, and limitations.' },
+  { number: '05', icon: 'spark', iconClass: 'icon-blue', title: 'Research Gap Assistant', description: 'Explore potential research gaps and possible future research directions.' },
+  { number: '06', icon: 'planner', iconClass: 'icon-lavender', title: 'Research Planner', description: 'Organize research objectives, milestones, and your research workflow.' },
+  { number: '07', icon: 'book', iconClass: 'icon-rose', title: 'Research Library', description: 'Keep track of saved papers and organize research materials.' },
 ]
 
 const papers = [
@@ -19,12 +20,12 @@ const papers = [
 ]
 const steps = [
   ['01', 'DISCOVER', 'Research Paper Discovery', 'Search and discover relevant academic papers based on your research topic and interests.', 'search'],
-  ['02', 'UNDERSTAND', 'AI Research Assistant', 'Explore complex research concepts, ask questions, and understand the key ideas in academic papers.', 'spark'],
+  ['02', 'UNDERSTAND', 'AI Research Assistant', 'Explore complex research concepts, ask questions, and understand key ideas in academic papers.', 'spark'],
   ['03', 'ANALYZE', 'Paper Analysis', 'Examine research objectives, methodologies, key findings, and study limitations.', 'document'],
   ['04', 'COMPARE', 'Paper Comparison', 'Compare multiple research papers to understand similarities, differences, and research approaches.', 'compare'],
   ['05', 'IDENTIFY', 'Research Gap Assistant', 'Investigate potential research gaps, limitations, and opportunities for future research.', 'target'],
-  ['06', 'PLAN', 'Research Planner', 'Organize your research objectives, methodology, milestones, and planned activities.', 'planner'],
-  ['07', 'ORGANIZE', 'Research Library', 'Save relevant papers and organize your research materials in one place.', 'book'],
+  ['06', 'PLAN', 'Research Planner', 'Organize research objectives, methodology, milestones, and planned activities.', 'planner'],
+  ['07', 'ORGANIZE', 'Research Library', 'Save relevant papers and organize research materials in one place.', 'book'],
 ]
 
 const highlights = [

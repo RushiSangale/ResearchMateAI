@@ -13,6 +13,7 @@ export default function Icon({ name, size = 20 }) {
 
   if (name === 'book') return <svg {...common}><path d="M12 7v14m0-14C10.5 5.7 8.5 5 6 5a4 4 0 0 0-4 4v11a1 1 0 0 0 1 1h5a5 5 0 0 1 4 2 5 5 0 0 1 4-2h5a1 1 0 0 0 1-1V9a4 4 0 0 0-4-4c-2.5 0-4.5.7-6 2Z" /></svg>
   if (name === 'document') return <svg {...common}><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6m-6 4h6"/></svg>
+  if (name === 'analysis') return <svg {...common}><path d="M5 3h9l5 5v5M14 3v5h5M8 12h5m-5 3h3"/><path d="M5 3v18h7m5-1 3 3m-1.5-5.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/></svg>
   if (name === 'search') return <svg {...common}><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5M8 11h5.5m-5.5-3h4"/></svg>
   if (name === 'spark') return <svg {...common}><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg>
   if (name === 'sun') return <svg {...common}><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
