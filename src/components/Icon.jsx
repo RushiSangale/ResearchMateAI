@@ -21,5 +21,6 @@ export default function Icon({ name, size = 20 }) {
   if (name === 'arrow') return <svg {...common}><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
   if (name === 'compare') return <svg {...common}><path d="M8 4H4v16h4M16 4h4v16h-4M8 8h8m-8 4h8m-8 4h5"/></svg>
   if (name === 'planner') return <svg {...common}><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 4 2 2 4-4"/></svg>
+  if (name === 'target') return <svg {...common}><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m16 8 5-5m-4 0h4v4"/></svg>
   return <svg {...common}><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>
 }

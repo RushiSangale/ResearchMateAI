@@ -6,6 +6,7 @@ import './Navbar.css'
 const navigation = [
   ['Home', 'home'],
   ['Features', 'features'],
+  ['How It Works', 'how-it-works'],
   ['About', 'about'],
   ['Contact', 'contact'],
 ]
